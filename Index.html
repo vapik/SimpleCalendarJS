@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>Тест календаря</title>
+
+    <link href="modules/Calendar/Calendar.css" rel="stylesheet">
+    <script src="modules/Calendar/Calendar.js"></script>
+
+</head>
+<body>
+<div id="calendar" class="calendar">
+    <div id="calendar-board"></div>
+
+    <div id="calendar-nav">
+            <button id="odd">Нечетный</button>
+            <button id="even">Четные</button>
+            <button id="holidays">Праздники</button>
+            <button id="disable">Запрещенные</button>
+            <button id="deselect">Сбросить</button>
+            <button id="get">Отправить</button>
+    </div>
+</div>
+<div>
+    <textarea id="result">Здесь будет результат</textarea>
+</div>
+
+<script src="App.js"></script>
+</body>
+</html>

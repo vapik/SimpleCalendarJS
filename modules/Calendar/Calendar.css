@@ -1,0 +1,117 @@
+.calendar {
+
+    z-index: 9999;
+    background-color: lightgrey;
+    color: #000;
+    border: 1px solid #444;
+    font-family: Arial,Helvetica,Sans-serif;
+    font-size: 90%;
+
+}
+
+.calendar-board_month{
+    display: inline-block;
+    margin: 0.3em;
+}
+
+.calendar-board_month table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.calendar-board_month thead {
+    border-bottom: 1px solid #aaa;
+}
+.calendar-board_month th,
+.calendar-board_month td {
+    margin: 0;
+    padding: 0.3em;
+    font-weight: normal;
+    text-align: center;
+}
+.calendar-board_month th {
+    border: 1px solid #777;
+}
+.calendar-board_month th{
+    background-color: #777;
+    color: #fff;
+}
+
+.calendar-board_month td {
+    background-color: #eee;
+    border: 1px solid #aaa;
+}
+
+/* Заголовок месяца */
+.calendar-board_header {
+
+    padding: 0.3em;
+    background-color: #444;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* Числа */
+.calendar-board_day {
+
+    text-align: center;
+    color: black;
+    background-color: lightgrey;
+    cursor:pointer;
+}
+
+/*  */
+.calendar-board_day:hover {
+    background-color: lightcoral;
+}
+
+/* Нечетный */
+.calendar-board_day.calendar-board_day__even {
+    color: orange;
+}
+
+/* Четный */
+.calendar-board_day.calendar-board_day__odd {
+    color: orange;
+}
+
+/* Выделенный */
+.calendar-board_day.calendar-board_day__selected {
+    font-weight: bold;
+    background-color: #777;
+    color: #fff;
+}
+
+/* Праздник */
+.calendar-board_day.calendar-board_day__holiday {
+    color: red; !important
+}
+
+/* Запрещен к выбору */
+.calendar-board_day.calendar-board_day__disable {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+}
+
+/* Кнопки */
+#calendar-nav button {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0.3em;
+    padding: 0.5em 1em;
+    color: #444; /* rgba not supported (IE 8) */
+    color: rgba(0, 0, 0, 0.80); /* rgba supported */
+    border: 1px solid #999;  /*IE 6/7/8*/
+    border: none rgba(0, 0, 0, 0);  /*IE9 + everything else*/
+    background-color: #E6E6E6;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+/* Поле вывода результата */
+textarea {
+    readonly: readonly;
+    width: 100%;
+    height: 100%;
+}
